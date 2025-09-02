@@ -1,0 +1,172 @@
+<style>
+    .ynote-share-template-pc-content {
+        min-width: 1096px;
+        min-height: 518px;
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: auto;
+        font-family: YaHei;
+        background-color: white;
+    }
+
+    .ynote-share-template-parallel-pc-container {
+        width: auto;
+        min-height: 458px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+    }
+
+    .ynote-share-template-parallel-pc-item {
+        position: absolute;
+    }
+
+    .ynote-share-template-parallel-pc-item-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: normal;
+        color: #272E47;
+        word-break: break-all;
+        margin-bottom: 8px;
+    }
+
+    .ynote-share-template-parallel-pc-item-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24.5px;
+        width: 100%;
+        color: #4E5A70;
+        word-break: keep-all;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 {
+        min-width: 1096px;
+        min-height: 458px;
+        align-items: flex-end;
+        transform: translate(-50%);
+        bottom: 60px;
+        top: unset;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji {
+        font-size: 54px;
+        width: 164px;
+        height: 190px;
+        position: absolute;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: NotoEmoji;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji-0 {
+        top: 124px;
+        left: 300px;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji-1 {
+        top: 124px;
+        left: 466px;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji-2 {
+        top: 124px;
+        left: 632px;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji-3 {
+        bottom: 0;
+        left: 383px;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-emoji-4 {
+        bottom: 0;
+        left: 549px;
+    }
+
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item {
+        width: 280px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-0 {
+        text-align: right;
+        left: 0;
+        top: 124px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-1 {
+        text-align: center;
+        left: 408px;
+        bottom: 354px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-2 {
+        text-align: left;
+        right: 0;
+        top: 124px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-3 {
+        text-align: right;
+        left: 83px;
+        bottom: 0;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .ynote-share-template-parallel-pc-container-5 .ynote-share-template-parallel-pc-item-4 {
+        text-align: left;
+        right: 83px;
+        bottom: 0;
+        justify-content: center;
+        align-items: flex-start;
+    }
+</style>
+<div class="ynote-share-template-pc-content">
+    <div class="ynote-share-template-parallel-pc-container ynote-share-template-parallel-pc-container-5">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 496 334" height="334" width="496">
+            <path fill="#F5EBFF" d="M82 0L164 47.5V142.5L82 190L0 142.5V47.5L82 0Z"></path>
+            <path fill="#E9F5E7" d="M414 0L496 47.5V142.5L414 190L332 142.5V47.5L414 0Z"></path>
+            <path fill="#E6F1FF" d="M248 0L330 47.5V142.5L248 190L166 142.5V47.5L248 0Z"></path>
+            <path fill="#FAE9E6" d="M331 144L413 191.5V286.5L331 334L249 286.5V191.5L331 144Z"></path>
+            <path fill="#FFF0E5" d="M165 144L247 191.5V286.5L165 334L83 286.5V191.5L165 144Z"></path>
+        </svg>
+
+
+        {{#each svgOutline.subThemeList}}
+        <div class="ynote-share-template-parallel-pc-item ynote-share-template-parallel-pc-item-{{@index}}">
+            <div class="ynote-share-template-parallel-pc-item-title">
+                {{this.title}}
+            </div>
+            <div class="ynote-share-template-parallel-pc-item-description">
+                {{this.description}}
+            </div>
+        </div>
+        <div class="ynote-share-template-parallel-pc-item-emoji ynote-share-template-parallel-pc-item-emoji-{{@index}}">
+            {{this.emoji}}
+        </div>
+        {{/each}}
+
+    </div>
+</div>

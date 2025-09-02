@@ -1,0 +1,151 @@
+<style>
+    .ynote-share-template-pc-content {
+        min-width: 1080x;
+        min-height: 446px;
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: auto;
+        font-family: YaHei;
+        background-color: white;
+    }
+
+    .ynote-share-template-parallel-pc-container {
+        width: auto;
+        min-height: 446px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+    }
+
+    .ynote-share-template-parallel-pc-item {
+        position: absolute;
+    }
+
+    .ynote-share-template-parallel-pc-item-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: normal;
+        color: #272E47;
+        word-break: break-all;
+        margin-bottom: 8px;
+    }
+
+    .ynote-share-template-parallel-pc-item-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24.5px;
+        width: 100%;
+        color: #4E5A70;
+        word-break: keep-all;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 {
+        min-width: 1080px;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-emoji {
+        font-size: 54px;
+        width: 164px;
+        height: 190px;
+        position: absolute;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: NotoEmoji;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-emoji-0 {
+        top: 56px;
+        left: 417px;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-emoji-1 {
+        top: 56px;
+        right: 333px;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-emoji-2 {
+        bottom: 56px;
+        left: 334px;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-emoji-3 {
+        bottom: 56px;
+        left: 500px;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item {
+        width: 280px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-0 {
+        text-align: right;
+        left: 117px;
+        top: 56px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-1 {
+        text-align: left;
+        right: 33px;
+        top: 56px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-2 {
+        text-align: right;
+        left: 34px;
+        bottom: 56px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .ynote-share-template-parallel-pc-container-4 .ynote-share-template-parallel-pc-item-3 {
+        text-align: left;
+        right: 116px;
+        bottom: 56px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+</style>
+<div class="ynote-share-template-pc-content">
+    <div class="ynote-share-template-parallel-pc-container ynote-share-template-parallel-pc-container-4">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 413 334" height="334" width="413">
+            <path fill="#F5EBFF" d="M165 0L247 47.5V142.5L165 190L83 142.5V47.5L165 0Z"></path>
+            <path fill="#E9F5E7" d="M331 0L413 47.5V142.5L331 190L249 142.5V47.5L331 0Z"></path>
+            <path fill="#FFF0E5" d="M82 144L164 191.5V286.5L82 334L0 286.5V191.5L82 144Z"></path>
+            <path fill="#E6F1FF" d="M248 144L330 191.5V286.5L248 334L166 286.5V191.5L248 144Z"></path>
+        </svg>
+
+
+        {{#each svgOutline.subThemeList}}
+        <div class="ynote-share-template-parallel-pc-item ynote-share-template-parallel-pc-item-{{@index}}">
+            <div class="ynote-share-template-parallel-pc-item-title">
+                {{this.title}}
+            </div>
+            <div class="ynote-share-template-parallel-pc-item-description">
+                {{this.description}}
+            </div>
+        </div>
+        <div class="ynote-share-template-parallel-pc-item-emoji ynote-share-template-parallel-pc-item-emoji-{{@index}}">
+            {{this.emoji}}
+        </div>
+        {{/each}}
+
+    </div>
+</div>
