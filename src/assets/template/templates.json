@@ -1,0 +1,108 @@
+{
+    "treelike": {
+        "3": [
+            {
+                "item": 3,
+                "width": 810,
+                "height": 410,
+                "html": "template-3-1.html"
+            },
+            {
+                "item": 3,
+                "width": 810,
+                "height": 414,
+                "html": "template-3-2.html"
+            }
+        ],
+        "4": [
+            {
+                "item": 4,
+                "width": 810,
+                "height": 354,
+                "html": "template-4-1.html"
+            },
+            {
+                "item": 4,
+                "width": 810,
+                "height": 414,
+                "html": "template-4-2.html"
+            },
+            {
+                "item": 4,
+                "width": 810,
+                "height": 380,
+                "html": "template-4-3.html"
+            }
+        ],
+        "5": [
+            {
+                "item": 5,
+                "width": 810,
+                "height": 409,
+                "html": "template-5-1.html"
+            },
+            {
+                "item": 5,
+                "width": 810,
+                "height": 380,
+                "html": "template-5-2.html"
+            },
+            {
+                "item": 5,
+                "width": 810,
+                "height": 564,
+                "html": "template-5-3.html"
+            }
+        ]
+    },
+    "parallel": {
+        "3": [
+            {
+                "item": 3,
+                "width": 1080,
+                "height": 446,
+                "html": "template-3.html"
+            }
+        ],
+        "4": [
+            {
+                "item": 4,
+                "width": 1080,
+                "height": 446,
+                "html": "template-4.html"
+            }
+        ],
+        "5": [
+            {
+                "item": 5,
+                "width": 1096,
+                "height": 458,
+                "html": "template-5.html"
+            }
+        ],
+        "6": [
+            {
+                "item": 6,
+                "width": 1179,
+                "height": 584,
+                "html": "template-6.html"
+            }
+        ],
+        "7": [
+            {
+                "item": 7,
+                "width": 1262,
+                "height": 584,
+                "html": "template-7.html"
+            }
+        ],
+        "8": [
+            {
+                "item": 8,
+                "width": 1346,
+                "height": 584,
+                "html": "template-8.html"
+            }
+        ]
+    }
+}
